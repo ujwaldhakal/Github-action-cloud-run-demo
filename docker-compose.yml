@@ -1,0 +1,13 @@
+version: '2'
+services:
+  golang.go:
+    container_name: golang.go
+    build: ./
+    environment:
+      - VIRTUAL_HOST=custom.pv
+      - APP_ENV=dev
+    volumes:
+      - ./app:/go/src/github.com/user/sites/app
+    ports:
+      - "5000:8080"
+
