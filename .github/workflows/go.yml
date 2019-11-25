@@ -11,6 +11,7 @@ jobs:
 
       - name: Authenticate with google cloud
 
+
         uses: actions/gcloud/auth@master
         env:
           GCLOUD_PROJECT_ID: ${{ secrets.GCLOUD_PROJECT_ID }}
